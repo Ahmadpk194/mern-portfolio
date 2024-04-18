@@ -1,0 +1,142 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background-color: #012965;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #01d293; 
+    /* background: #012965c1;  */
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #012965c1; 
+    color: #19223df0;
+  }
+
+
+
+
+  /* Loader animation */
+  .a{
+    animation: a 1s infinite;
+  }
+
+  @keyframes a {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      opacity: .5;
+    }
+  }
+
+  .k{
+    animation: k 1s infinite;
+  }
+
+  @keyframes k {
+    0%{
+      opacity: .5;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: .5;
+    }
+  }
+
+  .j{
+    animation: j 1s infinite;
+  }
+
+  @keyframes j {
+    0%{
+      opacity: .5;
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+
+
+
+  /* input */
+  input{
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.464);
+    width: 100%;
+    padding-left: 20px;
+    outline: none;
+    
+  }
+
+  input:focus{
+    border: 1px solid rgb(104, 104, 104);
+  }
+
+  textarea{
+    height: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.464);
+    width: 100%;
+    padding-left: 20px;
+    outline: none;
+  }
+
+  textarea:focus{
+    border: 1px solid rgb(104, 104, 104);
+  }
+
+/* Code section */
+  .code-section {
+    background-color: #10172c;
+    border: 1px solid #dddddd37;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    position: relative;
+}
+
+.code-section pre {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.code-section code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
